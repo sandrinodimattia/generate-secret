@@ -1,0 +1,18 @@
+{
+  "name": "generate-secret",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "now dev",
+    "start": "micro"
+  },
+  "engines": {
+    "node": "10.16"
+  },
+  "author": "Sandrino Di Mattia",
+  "license": "MIT",
+  "dependencies": {
+    "micro": "^9.3.4"
+  }
+}
