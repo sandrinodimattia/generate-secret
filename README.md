@@ -1,15 +1,15 @@
 # generate-secret
 
-A simple helper which will generate secrets.
+A simple web app which will generate secrets.
 
 ## Usage
 
-- https://generate-secret.now.sh/
-- https://generate-secret.now.sh/32
-- https://generate-secret.now.sh/48
+- https://generate-secret.vercel.app
+- https://generate-secret.vercel.app/32
+- https://generate-secret.vercel.app/48
 
 Or in the command line:
 
 ```bash
-curl https://generate-secret.now.sh/48
+curl https://generate-secret.vercel.app/48
 ```
