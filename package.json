@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "now dev",
+    "develop": "vercel dev",
     "start": "micro"
   },
   "engines": {
-    "node": "10.16"
+    "node": "14.x"
   },
   "author": "Sandrino Di Mattia",
   "license": "MIT",
