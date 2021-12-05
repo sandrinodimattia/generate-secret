@@ -1,8 +1,5 @@
 {
-  "name": "generate-secret",
-  "version": 2,
-  "routes": [
-    { "src": "/", "dest": "/0", "continue": true },
-    { "src": "/(.*)", "dest": "/api/$1", "continue": true }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/$1" }
   ]
 }
