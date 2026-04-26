@@ -3,6 +3,7 @@ const { promisify } = require('util');
 const { randomBytes } = require('crypto');
 
 const randomBytesAsync = promisify(randomBytes);
+const MAX_LENGTH = 512;
 
 module.exports = async (req, res) => {
   const length = parseInt(req.query && req.query.length);
@@ -10,6 +11,10 @@ module.exports = async (req, res) => {
     res.statusCode = 301;
     res.setHeader('Location', `/32`);
     res.end();
+    return;
+  }
+  if (length > MAX_LENGTH) {
+    send(res, 400, `Secret length must not exceed ${MAX_LENGTH}.`);
     return;
   }
 
